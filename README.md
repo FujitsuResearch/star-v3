@@ -8,7 +8,7 @@ The main entry points are the Jupyter notebooks in `paper/`. Each notebook can g
 
 ## Environment Setup with `uv`
 
-You can install the project environment with `uv`:
+You can install the project environment with the Python package manager `uv`:
 
 ```bash
 uv sync
