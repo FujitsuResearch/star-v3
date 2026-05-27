@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starsim"
+version = "0.1.0"
+description = "Source codes for reproducing the results in the paper `STAR-Magic Mutation: Even More Efficient Analog Rotation Gates for Early Fault-Tolerant Quantum Computer`"
+readme = "README.md"
+authors = [
+  {name = "Riki Toshio", email = "toshio.riki@fujitsu.com"},
+  {name = "Shinichiro Yamano", email = "s.yamano@fujitsu.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "numpy>=2.2.6",
+    "qulacs>=0.6.12",
+    "scipy>=1.15.3",
+    "stim>=1.15.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter-book>=0.6.5",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
